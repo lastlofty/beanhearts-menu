@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#6d241e">
+  <meta name="description" content="Меню Beanhearts — завтраки, горячие блюда, десерты и напитки">
+  <title>Beanhearts — меню</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Beanhearts — наверх"><span class="mark logo-mark"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ59ccefmVnEenVeZ55qSeNQArMtXebSFFcZYDBWHjP3l7G_9hSNLClDGM&s=10" alt="Логотип Beanhearts"></span><span>BEANHEARTS<small>RESTAURANT & COFFEE</small></span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ЗАВТРАКИ ВЕСЬ ДЕНЬ</p>
+        <h1>Еда, в которую<br><em>влюбляются</em></h1>
+        <p>Любимые завтраки, авторская кухня и кофе — с утра и до самого вечера.</p>
+        <a class="cta" href="#menu">Смотреть меню <span>↓</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Завтрак с яйцом пашот"><span class="badge">new<br><b>season</b></span></div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="menu-head"><div><p class="eyebrow">ВЫБИРАЙТЕ ПО НАСТРОЕНИЮ</p><h2>Наше меню</h2></div><p id="resultCount"></p></div>
+      <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg><input id="searchInput" type="search" placeholder="Найти блюдо или ингредиент…" aria-label="Поиск по меню"><button id="clearSearch" aria-label="Очистить поиск">×</button></div>
+      <nav class="categories" id="categories" aria-label="Категории меню"></nav>
+      <div class="filters">
+        <button class="filter active" data-filter="all">Все блюда</button><button class="filter" data-filter="veg">Без мяса</button><button class="filter" data-filter="new">Новинки</button><button class="filter" data-filter="light">До 500 ккал</button>
+      </div>
+      <div class="grid" id="menuGrid"></div>
+      <div class="empty" id="empty"><span>⌕</span><h3>Ничего не нашли</h3><p>Попробуйте изменить запрос или выбрать другую категорию.</p><button id="resetBtn">Сбросить фильтры</button></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand"><span class="mark logo-mark"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ59ccefmVnEenVeZ55qSeNQArMtXebSFFcZYDBWHjP3l7G_9hSNLClDGM&s=10" alt="Логотип Beanhearts"></span><div><b>BEANHEARTS</b><p>Ресторан, где начинается хороший день.</p></div></div><div><p>Меню может отличаться в разных ресторанах.</p><p>Цены указаны в рублях.</p></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
